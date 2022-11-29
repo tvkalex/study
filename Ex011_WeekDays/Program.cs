@@ -4,8 +4,9 @@
 5 -> Пятница
 */
 
+/*
 System.Console.WriteLine("Введите число: ");
-int number = int.Parse(Console.ReadLine()!);
+int number = int.Parse(Console.ReadLine()!); //второй вариант: int num = Convert.ToInt32(Console.ReadLine());
 switch (number)
 {
     case 1:
@@ -33,6 +34,7 @@ switch (number)
         System.Console.WriteLine("А сколько дней в твоей неделе?");
         break;
 }
+*/
 
 /*
 Console.WriteLine("Введите число: ");
@@ -70,3 +72,10 @@ else
     Console.WriteLine("Ошибка");
 }
 */
+
+string[]DayOfWeek = {"понедельник","вторник","среда","четверг","пятница","суббота","воскресенье"};
+Console.WriteLine ("Введите число от 1 до 7");
+int number1=Convert.ToInt32(Console.ReadLine ());
+number1 = number1 - 1;
+Console.WriteLine ("Ваш день недели - ");
+Console.WriteLine (DayOfWeek[number1]);
