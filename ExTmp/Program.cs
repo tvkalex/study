@@ -1,8 +1,4 @@
-﻿using System; class PleaseSayUra
-{
-    static void Main()
-    {
-        Console.WriteLine("Ура!");
-        Console.ReadLine();
-    }
-}
+﻿Console.WriteLine();
+System.Console.WriteLine();
+System.Console.Read();
+System.Console.WriteLine();
