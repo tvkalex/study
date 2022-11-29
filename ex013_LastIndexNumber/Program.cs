@@ -26,7 +26,7 @@ Console.WriteLine(N[2]);
 
 //Решение для числа любой длины. Находит последнюю цифру этого числа.
 Console.Write("Введите число: ");
-String N = Console.ReadLine();
+String N = Console.ReadLine()!;
 Console.WriteLine(N[N.Length - 1]);
 
 //Console.WriteLine(N.Length - 1); - для поиска индекса последней цифры в числе
