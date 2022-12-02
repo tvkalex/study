@@ -17,11 +17,13 @@
 int num = new Random().Next(100, 1000);
 System.Console.WriteLine(num);
 System.Console.WriteLine(num / 100 * 10 + num % 10);
+// это решение более правильное, т.к. выводит число и с ним можно дальше работать
 
 // int num = new Random().Next(100, 1000);
 // System.Console.WriteLine(num);
 // string chr = Convert.ToString(num);
 // System.Console.WriteLine($"{chr [0]}{chr [^1]}");
+// это решение менее правильное, т.к. выводит в результате строку
 // знак $ позволяет выводить значения переменных в строке
 // ($"{chr [0]}{chr [^1]}") вместо (chr [0] + "" + chr [^1])
 
