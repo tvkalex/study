@@ -29,4 +29,5 @@ Console.Write("Введите число: ");
 String N = Console.ReadLine()!;
 Console.WriteLine(N[N.Length - 1]);
 
+
 //Console.WriteLine(N.Length - 1); - для поиска индекса последней цифры в числе
