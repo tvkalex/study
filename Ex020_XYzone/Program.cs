@@ -51,3 +51,8 @@ else
 {
     System.Console.WriteLine("Точка находится на оси");
 }
+
+
+//проверка кол-ва знаков в стринговом значении
+// string text = "слово";
+// System.Console.WriteLine(text.Length);
