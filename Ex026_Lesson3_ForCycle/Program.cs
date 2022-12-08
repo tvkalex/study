@@ -8,8 +8,8 @@ string Method4(int count, string text)
     }
     return result;
 }
-//string res = Method4(10, "Метод 4, ");
-//Console.WriteLine(res);
+string res = Method4(10, "Метод 4, ");
+Console.WriteLine(res);
 
 // Цикл в цикле
 
