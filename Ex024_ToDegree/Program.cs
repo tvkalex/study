@@ -5,8 +5,8 @@
 2, 4 -> 16
 */
 
-int numberA = ReadInt("Введите число A: ");
-int numberB = ReadInt("Введите число B: ");
+int numberA = inputNumber("Введите число A: ");
+int numberB = inputNumber("Введите число B: ");
 ToDegree(numberA, numberB);
 
 
@@ -22,8 +22,26 @@ void ToDegree(int a, int b)
 }
 
 // Функция ввода
-int ReadInt(string message)
+// int ReadInt(string message)
+// {
+//     Console.WriteLine(message);
+//     return Convert.ToInt32(Console.ReadLine());
+// }
+
+// Функция ввода
+int inputNumber(string message)
 {
-    Console.WriteLine(message);
-    return Convert.ToInt32(Console.ReadLine());
+    int number;
+    string text;
+    while (true)
+    {
+        Console.Write(message);
+        text = Console.ReadLine()!;
+        if (int.TryParse(text, out number))
+        {
+            break;
+        }
+        Console.WriteLine("Не удалось распознать число, попробуйте еще раз.");
+    }
+    return number;
 }
