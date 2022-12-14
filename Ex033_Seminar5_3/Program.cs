@@ -43,7 +43,7 @@ int inputNumber()
     while (true)
     {
         Console.Write("Введите число: ");
-        text = Console.ReadLine();
+        text = Console.ReadLine()!;
         if (int.TryParse(text, out number))
         {
             break;
