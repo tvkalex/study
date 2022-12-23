@@ -62,7 +62,7 @@ int inputNumber(string str)
     while (true)
     {
         System.Console.Write(str);
-        text = Console.ReadLine();
+        text = Console.ReadLine()!;
         if (int.TryParse(text, out number))
         {
             break;
