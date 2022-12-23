@@ -1,8 +1,8 @@
-﻿string[,] table = new string[2, 5];
+﻿// string[,] table = new string[2, 5];
 // String.Empty инициализация строк
 // table[0,0] table[0,1] table[0,2] table[0,3] table [0,4] индексы элементов в многомерном массиве
 // table[1,0] table[1,1] table[1,2] table[1,3] table [1,4]
-table[1, 2] = "слово";
+// table[1, 2] = "слово";
 
 // for (int rows = 0; rows < 2; rows++)
 // {
@@ -11,6 +11,8 @@ table[1, 2] = "слово";
 //             Console.WriteLine($"-{table[rows, columns]}-");
 //     }
 // }
+
+// ======
 
 // int[,] matrix = new int[3, 4];
 // for (int i = 0; i < 3; i++)
@@ -22,6 +24,8 @@ table[1, 2] = "слово";
 // System.Console.WriteLine();
 // }
 
+// ======
+
 // int[,] matrix = new int[3, 4];
 // for (int i = 0; i < matrix. GetLength(0); i++)
 // {
@@ -32,6 +36,7 @@ table[1, 2] = "слово";
 // System.Console.WriteLine();
 // }
 
+// ======
 
 // void PrintArray(int[,] matr)
 // {
@@ -60,6 +65,8 @@ table[1, 2] = "слово";
 // FillArray(matrix);
 // System.Console.WriteLine();
 // PrintArray(matrix);
+
+// =======
 
 int[,] pic = new int[,]
 {
@@ -114,4 +121,44 @@ void FillImage(int row, int col)
 PrintImage(pic);
 FillImage(12, 12);
 PrintImage(pic);
+
+// ======
+
+// int Factorial(int n)
+// {
+//     // 1! = 1
+//     // 0! = 1
+//     if (n == 1) return 1;
+//     else return n * Factorial(n-1);
+// }
+// Console.WriteLine (Factorial(3));// 1*2*3 = 6
+
+// ======
+
+// double Factorial(int n)
+// {
+//     // 1! = 1
+//     // 0! = 1
+//     if (n == 1) return 1;
+//     else return n * Factorial(n-1);
+// }
+// for (int i = 1; i < 40; i++)
+// {
+// Console.WriteLine($"{i}! = {Factorial(i)}");
+// }
+
+// ======
+
+// f(1) = 1
+// f(2) = 1
+// f(n) = f(n-1) + f(n-2)
+// double Fibonacci(int n)
+// {
+//     if (n == 1 || n == 2) return 1;
+//     else return Fibonacci (n-1) + Fibonacci (n-2);
+// }
+// for (int i = 1; i < 50; i++)
+// {
+// Console.WriteLine($"f({i}) = {Fibonacci (i)}");
+// }
 
