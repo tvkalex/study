@@ -8,6 +8,7 @@ const int N = 4;
 int[,] myArray = FillArray(M, N);
 PrintArray(myArray);
 
+// Оптимальный вариант с меньшим задействованием ресурсов
 int[] arr = new int[10];
 for (int i = 0; i < myArray.GetLength(0); i++)
 {
@@ -16,6 +17,16 @@ for (int i = 0; i < myArray.GetLength(0); i++)
         arr[myArray[i, j]] += 1;
     }
 }
+
+// Вариант с использованием индекса
+// for (int i = 0; i < myArray. GetLength (0); i++)
+// {
+//     for (int j = 0, j < myArray.GetLength(1) ; j++)
+//     {
+//         int index = myArray[i, j];
+//         arr [index] += 1;
+//     }
+// }
 
 for (int i = 0; i < arr.Length; i++)
 {
@@ -51,3 +62,24 @@ void PrintArray(int[,] arr)
     System.Console.WriteLine();
 }
 
+// Вариант сильно задействует ресурсы, т.к. при большом массиве
+// прогоняет каждый элемент по всей цепочке if == k
+// for (int k = 0; k < 10; k++)
+// {
+//     int count = 0;
+//     for (int i = 0; i < myArray.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < myArray.GetLength(1); j++)
+//         {
+//             if (myArray[i, j] == k)
+//             {
+//                 count++;
+//             }
+//          }
+//     }
+    
+//     if (count != 0)
+//     {
+//         System.Console.WriteLine($"Количество элементов {k} = {count}");
+//     }
+// }
